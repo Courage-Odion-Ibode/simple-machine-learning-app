@@ -14,6 +14,10 @@ handler.load_model()
 def read_root():
     return {"message": "Welcome to the Machine Learning API!", "version": "1.0.0"}
 
+@app.get("/predict")
+def predict_get():
+   return {"message": "Please use a POST request to get predictions. Running Sucessfully!"}
+
 @app.post("/predict")
 def predict(input_data: InputData):
     prediction = handler.predict(input_data)
