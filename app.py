@@ -3,7 +3,8 @@ import streamlit as st
 st.set_page_config(page_title="My Streamlit App", page_icon=":smiley:", layout="centered")
 
 # API_URL = st.secrets.get("API_URL", "http://localhost:8000/predict")
-API_URL = "http://localhost:8000/predict"
+# API_URL = "http://localhost:8000/predict"
+API_URL = "https://simple-machine-learning-app.onrender.com/predict"
 
 st.title("House Price Prediction")
 st.write("Enter the area of the house in square feet to get a price prediction.")
